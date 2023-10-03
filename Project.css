@@ -1,0 +1,100 @@
+/* Global Styles */
+/* Set the default font for the entire page to 'Roboto' with fallback to sans-serif fonts. */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #afa8a8; /* Set the background color of the page */
+    color: #333; /* Set the default text color */
+}
+
+/* Header Styles */
+/* Style the header section at the top of the page */
+header {
+    background-color: #141c79; /* Set the background color of the header */
+    color: #fff; /* Set the text color of the header */
+    text-align: center; /* Center-align text within the header */
+    padding: 15px 0; /* Add padding above and below the header content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow effect to the header */
+}
+
+/* Navigation Styles */
+/* Style the navigation menu */
+nav ul {
+    list-style: none; /* Remove default list-style (bullets) */
+    padding: 0; /* Remove padding from the unordered list */
+}
+
+nav ul li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add space between list items */
+}
+
+/* Navigation Logo Styles */
+/* Style the logo image in the navigation bar */
+.nav-logo {
+    width: 40px; /* Set the width of the logo image */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+}
+
+/* Navigation Link Styles */
+/* Style navigation links in the menu */
+nav ul li a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #fff; /* Set link text color to white */
+    font-weight: bold; /* Make the link text bold */
+    transition: color 0.3s; /* Add a smooth color transition on hover */
+}
+
+nav ul li a:hover {
+    color: #ff6600; /* Change link text color to orange on hover */
+}
+
+/* Project Container Styles */
+/* Style the container for project cards */
+.project-container {
+    display: flex; /* Display projects in a row */
+    flex-wrap: wrap; /* Wrap projects to the next line if they don't fit */
+    justify-content: space-around; /* Space projects evenly within the container */
+    padding: 20px; /* Add padding around the container */
+}
+
+/* Project Card Styles */
+/* Style individual project cards */
+.project {
+    width: 45%; /* Set the width of each project card */
+    background-color: #fff; /* Set the background color of project cards */
+    padding: 20px; /* Add padding inside project cards */
+    margin: 20px 0; /* Add margin to separate project cards */
+    border-radius: 8px; /* Add rounded corners to project cards */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to project cards */
+    text-align: center; /* Center-align text within project cards */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transformation effect on hover */
+}
+
+.project:hover {
+    transform: translateY(-10px); /* Move the project card up slightly on hover */
+}
+
+.project h2 {
+    font-size: 24px; /* Set the font size for project titles */
+    margin-top: 10px; /* Add space above project titles */
+    color: #333; /* Set the text color for project titles */
+}
+
+.project p {
+    font-size: 16px; /* Set the font size for project descriptions */
+    margin-bottom: 20px; /* Add space below project descriptions */
+    color: #666; /* Set the text color for project descriptions */
+}
+
+.project a {
+    text-decoration: none; /* Remove underlines from links within project cards */
+    color: #ff6600; /* Set link text color to orange */
+    font-weight: bold; /* Make link text bold */
+    transition: color 0.3s; /* Add a smooth color transition on hover */
+}
+
+.project a:hover {
+    color: #ff3300; /* Change link text color to a darker shade of orange on hover */
+}

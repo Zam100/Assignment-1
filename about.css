@@ -1,0 +1,99 @@
+/* Styling for the header section */
+header {
+    background-color: #2679cb; /* Background color of the header */
+    color: #fff; /* Text color of the header */
+    padding: 40px 0; /* Top and bottom padding of the header */
+    text-align: center; /* Center-align the text in the header */
+    box-shadow: 0px 2px 10px rgba(231, 224, 224, 0.1); /* Shadow effect for the header */
+}
+
+/* Setting the font family for the entire body */
+body {
+    font-family: Arial, sans-serif; /* Font family for the entire body content */
+}
+
+/* Styling for the navigation bar */
+nav ul {
+    list-style: none; /* Removing default list styles from the unordered list */
+    padding: 0; /* Removing padding from the unordered list */
+    margin: 10; /* Setting margin for the unordered list */
+    display: flex; /* Using flexbox for layout */
+    justify-content: center; /* Center-align the navigation items horizontally */
+    background-color: #333; /* Background color of the navigation bar */
+    padding: 10px 0; /* Top and bottom padding of the navigation bar */
+}
+
+/* Styling for the navigation bar items */
+nav ul li {
+    margin: 0 30px; /* Margin between navigation items */
+}
+
+/* Styling for the navigation bar logo */
+.nav-logo {
+    width: 40px; /* Width of the logo */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+}
+
+/* Styling for navigation bar links */
+nav ul li a {
+    text-decoration: none; /* Remove underline from the links */
+    color: #fff; /* Text color of the navigation links */
+    font-weight: bold; /* Bold font for navigation links */
+    font-size: 20px; /* Font size of the navigation links */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+/* Styling for navigation bar links on hover */
+nav ul li a:hover {
+    color: #60db66; /* Text color on hover */
+}
+
+/* Styling for the 'about' section */
+.about {
+    background-color: #f4f4f4; /* Background color of the 'about' section */
+    display: flex; /* Using flexbox for layout */
+    justify-content: center; /* Center-align the content horizontally */
+    align-items: center; /* Center-align the content vertically */
+    min-height: 100vh; /* Minimum height of the 'about' section */
+}
+
+/* Styling for the container inside the 'about' section */
+.container {
+    max-width: 600px; /* Maximum width of the container */
+    padding: 40px; /* Padding inside the container */
+    background-color: #fff; /* Background color of the container */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Shadow effect for the container */
+    border-radius: 10px; /* Border radius for rounded corners */
+    text-align: center; /* Center-align the text inside the container */
+}
+
+/* Styling for heading 1 */
+h1 {
+    color: #333; /* Text color of heading 1 */
+    font-size: 36px; /* Font size of heading 1 */
+    margin-bottom: 20px; /* Bottom margin of heading 1 */
+}
+
+/* Styling for paragraphs */
+p {
+    font-size: 18px; /* Font size of paragraphs */
+    color: #555; /* Text color of paragraphs */
+    line-height: 1.6; /* Line height of paragraphs */
+    margin-bottom: 30px; /* Bottom margin of paragraphs */
+}
+
+/* Styling for videos */
+video {
+    width: 100%; /* Full width for videos */
+    display: block; /* Display as block element */
+    margin-bottom: 30px; /* Bottom margin for videos */
+}
+
+/* Styling for circular images */
+img {
+    border-radius: 50%; /* Border radius for circular shape */
+    width: 200px; /* Width of the circular image */
+    height: 200px; /* Height of the circular image */
+    object-fit: cover; /* Maintain aspect ratio and cover the content box */
+    margin-bottom: 20px; /* Bottom margin for circular images */
+}

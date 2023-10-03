@@ -1,0 +1,115 @@
+<!-- Declaration of HTML document with English language -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set character encoding and viewport for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the web page -->
+    <title>Contact Us</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="Contact.css">
+    <!-- Validation badge for CSS -->
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</head>
+
+<body>
+    <!-- Header section containing the navigation bar and the main heading -->
+    <header>
+        <!-- Container for header content -->
+        <div class="container">
+            <!-- Main heading of the page -->
+            <h1>Get In Touch</h1>
+            <!-- Internal CSS for text alignment -->
+            <style>
+                .center-text {
+                    text-align: center; /* Centers text horizontally */
+                    line-height: 100vh; /* Centers text vertically */
+                }
+            </style>
+            <!-- Navigation bar with menu items and logo -->
+            <nav>
+                <!-- Unordered list for menu items -->
+                <ul>
+                    <!-- Logo image -->
+                    <img id="nav" src="nav.png" alt="Logo" class="nav-logo">
+                    <!-- Menu items with links to different pages -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="Project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section for the contact form -->
+    <section class="contact-form">
+        <!-- Container for form content -->
+        <div class="container">
+            <!-- Introduction and instruction for the form -->
+            <p>Have any questions or suggestions? I'd love to hear from you! Drop a message below:</p>
+            <!-- Form for user input with fields for name, email, and message -->
+            <form id="contactForm" onsubmit="return validateForm()">
+                <!-- Input field for name -->
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <!-- Input field for email -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Textarea for message input -->
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <!-- Submit button for form submission -->
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </section>
+
+    <!-- JavaScript function for form validation -->
+    <script>
+        function validateForm() {
+            // Retrieve user input values
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            // Regular expression pattern for email validation
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+            // Validation checks for name, email, and message
+            if (name === "") {
+                alert("Please enter your name.");
+                return false;
+            }
+            if (!email.match(emailPattern)) {
+                alert("Invalid email address.");
+                return false;
+            }
+            if (message === "") {
+                alert("Please enter your message.");
+                return false;
+            }
+
+            // Form is valid, allow submission
+            return true;
+        }
+    </script>
+
+    <!-- Footer section with contact information and copyright notice -->
+    <footer>
+        <!-- Contact email link -->
+        <p>Contact: <a href="mailto:AhmadFarzam.ayubi@ontariotechu.net">AhmadFarzam.ayubi@ontariotechu.net</a></p>
+        <!-- Copyright notice with the current year -->
+        <p>&copy; 2023 A.Farzam Ayubi</p>
+    </footer>
+</body>
+
+</html>

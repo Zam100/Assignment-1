@@ -1,0 +1,112 @@
+/* Reset some default styles */
+
+/* Set margins and paddings to some elements */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the overall font and background styles for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #faf8f8;
+    background-image: url("photo1.jpg"); /* Background image path */
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-attachment: scroll; /* Allow scrolling background */
+}
+
+/* Header Styles */
+
+/* Style for the header section */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Style for the header's main title */
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Navigation Styles */
+
+/* Style for the navigation bar */
+nav {
+    background-color: #9f9f9f;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Style for the navigation bar logo */
+.nav-logo {
+    width: 40px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for the navigation list */
+nav ul {
+    list-style: none;
+}
+
+/* Style for each navigation list item */
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* Style for navigation links */
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Style for navigation links on hover */
+nav ul li a:hover {
+    color: #ff8c00;
+}
+
+/* Main Content Styles */
+
+/* Style for the main content container */
+.container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+
+/* Style for the footer section */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Button Styles */
+
+/* Style for buttons */
+button {
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Style for buttons on hover */
+button:hover {
+    background-color: #333;
+}

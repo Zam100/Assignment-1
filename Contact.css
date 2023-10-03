@@ -1,0 +1,118 @@
+/* Reset default styles */
+
+/* Set default margins and padding for various elements to zero */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and a common font-family */
+body {
+    font-family: 'Arial', sans-serif; /* Use Arial or a similar sans-serif font */
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+/* Header Styles */
+
+/* Style the header with a light gray background, dark text color, padding, and shadow */
+header {
+    background-color: #cecdcd;
+    color: #351515;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the navigation bar with a dark background and center the content */
+nav {
+    background-color: #444;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Style the navigation logo with a specific width and aspect ratio */
+.nav-logo {
+    width: 40px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+/* Remove list bullets from navigation links */
+nav ul {
+    list-style: none;
+}
+
+/* Style the navigation list items with inline display and margin */
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+/* Style the navigation links with no underlines, bold text, font size, and color transition on hover */
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+/* Change link color on hover */
+nav ul li a:hover {
+    color: #007BFF; /* Change to a different color on hover */
+}
+
+/* Form Styles */
+
+/* Style the form with max width, margin, padding, border radius, background color, and shadow */
+form {
+    max-width: 60%;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Style headings and paragraphs within the form */
+h1, p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style form labels with bold font */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style form input fields and text areas with width, padding, margin, border, border radius, and font size */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style the submit button with background color, text color, padding, border, border radius, cursor, font size, and hover effect */
+input[type="submit"] {
+    background-color: #007BFF; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+/* Change submit button background color on hover */
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
